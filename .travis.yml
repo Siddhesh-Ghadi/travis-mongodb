@@ -1,0 +1,10 @@
+arch: ppc64le
+dist: focal
+
+service: mongodb
+
+before_script:
+  - mongo mydb_test --eval 'db.createUser({user:"travis",pwd:"test",roles:["readWrite"]});'
+
+script:
+  - mongo --version
