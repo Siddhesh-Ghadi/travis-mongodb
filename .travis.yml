@@ -1,5 +1,5 @@
 arch: ppc64le
-dist: focal
+dist: bionic
 
 service: mongodb
 
